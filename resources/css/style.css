@@ -2,8 +2,13 @@ html{
     font-size: 20px;
 }
 
-*{
-    box-sizing:border-box;
+* {
+    box-sizing: border-box;
+    font-size: 109%;
+}
+
+.mob-nav-icon {
+    display: none;
 }
 
 body{
@@ -57,7 +62,7 @@ header {
     padding-right: 3%;
 }
 
-nav a{
+header a{
     text-decoration: none;
     color: ghostwhite;
     padding: 1rem;
@@ -68,7 +73,7 @@ nav a{
 }
 
 #banner{
-    grid-area: 1 / 1 / span 3 / span 6;
+    grid-area: 1 / 1 / span 4 / span 6;
     background-image: url("../img/banner.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -90,9 +95,10 @@ nav a{
 }
 
 #latest-table {
-    grid-area: 1 / 7 / span 3 / span 6;
+    grid-area: 1 / 7 / span 4 / span 6;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 #latest-table-container {
@@ -101,7 +107,10 @@ nav a{
     display: flex;
     justify-content: center;
     align-items: center;
+    align-content: center;
     flex-wrap: wrap;
+    flex-basis: 1rem;
+    flex-grow: 2;
 }
 
 #latest-table-container table td,th,tr{
@@ -111,14 +120,14 @@ nav a{
 
 main{
     display: grid;
-    grid-template: repeat(16,1fr) / repeat(12, 1fr);
+    grid-template: repeat(12,1fr) / repeat(12, 1fr);
     grid-gap: 1rem;
     width: 80%;
     margin-left: 10%;
 }
 
 #top-visited {
-    grid-area: 4 / 1 / span 5 / span 12;
+    grid-area: 5 / 1 / span 5 / span 12;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -149,10 +158,17 @@ main{
 
 
 #team {
-    grid-area: 9 / 1 / span 6 / span 12;
+    grid-area: 10 / 1 / span 6 / span 12;
+    margin: auto;
+}
+
+#team h2{
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+}
+
+#team button{
+    margin-left: 46%;
 }
 
 #team-container {
@@ -167,7 +183,7 @@ main{
 }
 
 #contact {
-    grid-area: 15 / 1 / span 2 / span 12;
+    grid-area: 16 / 1 / span 1 / span 12;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -197,4 +213,267 @@ footer {
     justify-content: center;
     color: hsl(104 36% 28%);
     width: 100%;
+}
+
+@media only screen and (max-width: 2500px){
+    #top-visited-container img{
+        width: 32rem;
+        height: 20rem;
+    }
+
+    main {
+        grid-template: repeat(11,1fr) / repeat(12,1fr);
+    }
+
+    #banner {
+        grid-area: 1 / 1 / span 3 / span 6;
+    }
+
+    #latest-table {
+        grid-area: 1 / 7 / span 3 / span 6;
+    }
+
+    #top-visited {
+        grid-area: 4 / 1 / span 5 / span 12;
+    }
+
+    #team {
+        grid-area: 9 / 1 / span 2 / span 12;
+    }
+
+    #contact {
+        grid-area: 11 / 1 / span 1 / span 12;
+    }
+
+    #team button{
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 2200px){
+    #top-visited-container img {
+        width: 24rem;
+        height: 15rem;
+    }
+
+    main {
+        grid-template: repeat(9,1fr) / repeat(12,1fr);
+    }
+
+    #banner {
+        grid-area: 1 / 1 / span 3 / span 6;
+    }
+
+    #latest-table {
+        grid-area: 1 / 7 / span 3 / span 6;
+    }
+
+    #top-visited {
+        grid-area: 4 / 1 / span 3 / span 12;
+    }
+
+    #team {
+        grid-area: 7 / 1 / span 2 / span 12;
+    }
+
+    #contact {
+        grid-area: 9 / 1 / span 1 / span 12;
+    }
+
+    #team button {
+        font-size: 1.2rem;
+    }
+    *{
+        font-size: 107%;
+    }
+    .right-header{
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 1996px) {
+    main {
+        grid-template: repeat(8,1fr) / repeat(12,1fr);
+    }
+
+    #banner {
+        grid-area: 1 / 1 / span 2 / span 6;
+    }
+
+    #latest-table {
+        grid-area: 1 / 7 / span 2 / span 6;
+    }
+
+    #top-visited {
+        grid-area: 3 / 1 / span 3 / span 12;
+    }
+
+    #team {
+        grid-area: 6 / 1 / span 2 / span 12;
+    }
+
+    #contact {
+        grid-area: 8 / 1 / span 1 / span 12;
+    }
+}
+
+@media only screen and (max-width: 1810px) {
+
+    main {
+        grid-template: repeat(6,1fr) / repeat(12,1fr);
+    }
+
+    #banner {
+        grid-area: 1 / 1 / span 1 / span 6;
+    }
+
+    #latest-table {
+        grid-area: 1 / 7 / span 1 / span 6;
+    }
+
+    #top-visited {
+        grid-area: 2 / 1 / span 2 / span 12;
+    }
+
+    #team {
+        grid-area: 4 / 1 / span 2 / span 12;
+    }
+
+    #contact {
+        grid-area: 6 / 1 / span 1 / span 12;
+    }
+    *{
+        font-size: 106%;
+    }
+}
+
+@media only screen and (max-width: 1588px) {
+
+    *{
+        font-size: 103%;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+
+    * {
+        font-size: 100%;
+    }
+    #banner {
+        grid-area: 1 / 1 / span 1 / span 6;
+    }
+
+    #latest-table {
+        grid-area: 1 / 7 / span 1 / span 6;
+    }
+
+    #top-visited {
+        grid-area: 2 / 1 / span 3 / span 12;
+    }
+
+    #team {
+        grid-area: 5 / 1 / span 2 / span 12;
+    }
+
+    #contact {
+        grid-area: 7 / 1 / span 1 / span 12;
+    }
+    main {
+        grid-template: repeat(7,1fr) / repeat(12,1fr);
+    }
+    .right-header {
+        width: 55%;
+    }
+}
+
+@media only screen and (max-width: 1085px) {
+    .right-header {
+        width: 65%;
+    }
+}
+
+@media only screen and (max-width: 1017px) {
+    #banner {
+        grid-area: 1 / 1 / span 1 / span 6;
+    }
+
+    #latest-table {
+        grid-area: 1 / 7 / span 1 / span 6;
+    }
+
+    #top-visited {
+        grid-area: 2 / 1 / span 5 / span 12;
+    }
+
+    #team {
+        grid-area: 7 / 1 / span 3 / span 12;
+    }
+
+    #contact {
+        grid-area: 10 / 1 / span 1 / span 12;
+    }
+
+    main {
+        grid-template: repeat(10,1fr) / repeat(12,1fr);
+    }
+
+    .right-header {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 940px) {
+    #banner {
+        grid-area: 1 / 1 / span 1 / span 12;
+    }
+
+    #latest-table {
+        grid-area: 2 / 1 / span 1 / span 12;
+    }
+
+    #top-visited {
+        grid-area: 3 / 1 / span 5 / span 12;
+    }
+
+    #team {
+        grid-area: 8 / 1 / span 3 / span 12;
+    }
+
+    #contact {
+        grid-area: 11 / 1 / span 1 / span 12;
+    }
+
+    main {
+        grid-template: repeat(11,1fr) / repeat(12,1fr);
+    }
+
+    .right-header {
+        width: 80%;
+    }
+
+    *{
+        font-size: 103%;
+    }
+
+    #logo{
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 866px){
+    .right-header{
+        display:none;
+    }
+    .mob-nav-icon div {
+        width: 35px;
+        height: 5px;
+        background-color: whitesmoke;
+        margin: 0.2rem 0;
+        display: block;
+    }
+
+    .mob-nav-icon {
+        display: inline-block;
+        margin-top: 10px;
+    }
 }
