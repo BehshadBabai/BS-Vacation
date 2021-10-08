@@ -128,6 +128,7 @@ main{
     display: flex;
     flex-wrap: wrap;
     height: 100%;
+    width: 100%;
     justify-content: space-evenly;
 }
 
@@ -189,4 +190,11 @@ main{
 
 #team button{
     font-size: 0.9rem;
+}
+
+footer {
+    display: inline-flex;
+    justify-content: center;
+    color: hsl(104 36% 28%);
+    width: 100%;
 }
