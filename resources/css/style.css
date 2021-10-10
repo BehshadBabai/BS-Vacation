@@ -219,7 +219,11 @@ footer {
     width: 100%;
 }
 
-@media only screen and (max-width: 2500px){
+#disclaimer{
+    grid-area: 1 / 1 / span 1 / span 12;
+}
+
+@media only screen and (max-width: 2560px){
     *{
         font-size: 1.75rem;
     }
