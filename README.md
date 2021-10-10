@@ -29,7 +29,10 @@ This webpage is developed to showcase knowledege of developing responsive webpag
 
 
 ## Screenshots
-![Example screenshot](./resources/img/Screenshot.png)
+![Example screenshot](./resources/img/Screenshot1.png)
+(./resources/img/Screenshot2.png)
+(./resources/img/Screenshot3.png)
+(./resources/img/Screenshot4.png)
 <!-- If you have screenshots you'd like to share, include them here. -->
 
 
@@ -42,7 +45,7 @@ Website displays info about a travel agency Vacation
 
 
 ## Project Status
-Project is: In Progress
+Project is: Complete
 
 
 ## Room for Improvement
