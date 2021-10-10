@@ -41,7 +41,7 @@ You can run this program on your local machine by opening the index.html file on
 
 
 ## Usage
-Website displays info about a travel agency Vacation
+Website displays info about a travel agency
 
 
 ## Project Status
