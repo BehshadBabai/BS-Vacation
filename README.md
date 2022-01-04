@@ -17,7 +17,7 @@ BS Vacation
 
 
 ## General Information
-This webpage is developed to showcase knowledege of developing responsive webpages and aligning elements of a webpage using flexbox and grid. The website is a static website providing information on a travel agency called the BS Vacation. Note that the links and the buttons on this website do not work and this project is just intended to showcase knowledge by displaying the first page of a potential website 
+This webpage is developed to showcase knowledge of developing responsive webpages and aligning elements of a webpage using flexbox and grid. The website is a static website providing information on a travel agency called the BS Vacation. Note that the links and the buttons on this website do not work and this project is just intended to showcase knowledge by displaying the first page of a potential website 
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
 
